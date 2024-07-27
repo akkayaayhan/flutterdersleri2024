@@ -20,12 +20,11 @@ class MyHomePage extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Confirmation Dialog'),
-          content: Text('Are you sure you want to proceed?'),
+          content: Text('Silmek istedğinizden emin misiniz?'),
           actions: [
             TextButton(
-              
               onPressed: () {
-                final snackbar=SnackBar(content: Text("Mesaj Silindi"));
+                final snackbar = SnackBar(content: Text("Mesaj Silindi"));
                 Navigator.of(context).pop();
                 ScaffoldMessenger.of(context).showSnackBar(snackbar);
               },

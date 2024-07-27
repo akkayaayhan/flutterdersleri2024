@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/dersler/ders21_pageview.dart';
 import 'package:myapp/dersler/ders24_dialog_widgets.dart';
 
 void main() {
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
       home: Ders24DialogWidgets(),
